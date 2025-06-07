@@ -19,7 +19,7 @@ const app = express();
 app.use(rateLimiter); // Apply rate limiting middleware
 app.use(express.json()); 
 
-app.use("api/transactions", transactionsRoute);
+app.use("/api/transactions", transactionsRoute);
 
 // Set up the port from environment variables or default to 5001
 // This allows the server to listen on a specific port defined in the environment variables or defaults to 5001. 
@@ -28,9 +28,9 @@ const PORT = process.env.PORT || 5001;
 
 // Define routes
 // This route handles the root path and responds with a welcome message.
-app.get("/", (req, res) => {
-    res.send("Welcome to the Transactions API");
-});
+//app.get("/", (req, res) => {
+//    res.send("Welcome to the Transactions API");
+//});
 
 
 // Initialize the database and start the server

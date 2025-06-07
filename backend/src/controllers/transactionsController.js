@@ -1,5 +1,5 @@
 
-import {sql} from '../config/db.js'; // Adjust the path as necessary
+import {sql} from '../src/config/db.js'; // Adjust the path as necessary
 
 
 export async function getTransactionsByUserId(req, res) {
