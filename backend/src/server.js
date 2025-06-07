@@ -1,9 +1,9 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import {initDB} from './config/db.js'; // Adjust the path as necessary
-import rateLimiter from './middleware/rateLimiter.js';
+import {initDB} from './src/config/db.js'; // Adjust the path as necessary
+import rateLimiter from './src/middleware/rateLimiter.js';
 
-import transactionsRoute from './routes/transactionsRoute.js'; // Import the transactions route
+import transactionsRoute from './src/routes/transactionsRoute.js'; // Import the transactions route
 
 // Load environment variables from .env file
 // This allows you to use environment variables defined in a .env file.

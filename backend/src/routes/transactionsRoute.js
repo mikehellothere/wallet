@@ -1,5 +1,5 @@
 import express from 'express';
-import {createTransaction, deleteTransaction, getSummaryByUserId, getTransactionsByUserId} from '../../../controllers/transactionsController.js'; // Adjust the path as necessary
+import {createTransaction, deleteTransaction, getSummaryByUserId, getTransactionsByUserId} from '../controllers/transactionsController.js'; // Adjust the path as necessary
 
 
 const router = express.Router();
